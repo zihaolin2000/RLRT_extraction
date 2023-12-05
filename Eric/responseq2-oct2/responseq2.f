@@ -61,7 +61,7 @@ c     & 0.36333E-01,0.75341E-01,0.27892E+00,0.15692E+00,0.10459E+00 /
       nuel = q2/2./(0.931494*A)
       nu = nuel
       open(unit=6, file='responseq2_output.txt', status='replace')
-      do i=1,10000
+      do i=1,30000
         nu = nu + dnu
 
         qv = sqrt(q2+nu*nu)
